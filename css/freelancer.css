@@ -194,6 +194,10 @@ header.masthead h2 {
   }
 }
 
+.timeline {
+  padding-bottom: 0rem;
+}
+
 .portfolio {
   margin-bottom: -15px;
 }
