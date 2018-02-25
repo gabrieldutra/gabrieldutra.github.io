@@ -132,6 +132,10 @@ section h2 {
   padding: 2em;
 }
 
+#about p {
+  line-height: 200%;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
