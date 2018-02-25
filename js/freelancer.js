@@ -18,7 +18,7 @@
       $(this).html($(this).data("pt-br"));
     });
     $("#br-flag").hide();
-  } else $("#us-flag").hide();
+  } else $("#gb-flag").hide();
 
   /*======= Skillset *=======*/
     
