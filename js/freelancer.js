@@ -3,6 +3,23 @@
   
   $('[data-toggle="tooltip"]').tooltip();
 
+  $.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+       return null;
+    }
+    else{
+       return decodeURI(results[1]) || 0;
+    }
+  }
+
+  if($.urlParam("lang") == "pt-br"){
+    $("[data-pt-br!=null]").each(function(){
+      $(this).html($(this).data("pt-br"));
+    });
+    $("#br-flag").hide();
+  } else $("#us-flag").hide();
+
   /*======= Skillset *=======*/
     
     $('.level-bar-inner').css('width', '0');
