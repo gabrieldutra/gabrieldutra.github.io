@@ -1,5 +1,25 @@
 (function($) {
   "use strict"; // Start of use strict
+  
+  $('[data-toggle="tooltip"]').tooltip();
+
+  /*======= Skillset *=======*/
+    
+    $('.level-bar-inner').css('width', '0');
+    
+    $(window).on('load', function() {
+
+        $('.level-bar-inner').each(function() {
+        
+            var itemWidth = $(this).data('level');
+            
+            $(this).animate({
+                width: itemWidth
+            }, 800);
+            
+        });
+
+    });
 
   var timelineBlocks = $('.cd-timeline-block'),
 		offset = 0.8;
