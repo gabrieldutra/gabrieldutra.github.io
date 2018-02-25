@@ -94,6 +94,10 @@ section h2 {
   line-height: 3.1rem;
 }
 
+#about .row {
+  padding: 2em;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -207,6 +211,7 @@ header.masthead h2 {
   display: block;
   max-width: 25rem;
   margin-bottom: 15px;
+  height: 90%;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
@@ -341,6 +346,10 @@ a {
 
 a:focus, a:hover, a:active {
   color: #1e8b9c;
+}
+
+.img-profile {
+  border: .5rem solid rgba(255,255,255,.2);
 }
 
 .btn {

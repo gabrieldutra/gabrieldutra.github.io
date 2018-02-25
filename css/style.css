@@ -81,10 +81,13 @@ Modules - reusable parts of our design
   border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
-.cd-timeline-img img {
+.cd-timeline-img img, .cd-timeline-img i {
+  text-align: center;
   display: block;
   width: 24px;
   height: 24px;
+  font-size: 24px;
+  color: white;
   position: relative;
   left: 50%;
   top: 50%;
@@ -99,6 +102,9 @@ Modules - reusable parts of our design
 }
 .cd-timeline-img.cd-location {
   background: #f0ca45;
+}
+.cd-timeline-img.cd-blue {
+  background: #4582f0;
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
