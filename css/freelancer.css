@@ -217,7 +217,7 @@ Modules - reusable parts of our design
 
 .cd-container::after {
   /* clearfix */
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -231,7 +231,7 @@ Modules - reusable parts of our design
 
 #cd-timeline::before {
   /* this is the vertical line */
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 18px;
@@ -283,6 +283,9 @@ Modules - reusable parts of our design
 }
 
 .cd-timeline-img {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -292,18 +295,11 @@ Modules - reusable parts of our design
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
-.cd-timeline-img img, .cd-timeline-img i {
+.cd-timeline-img img,
+.cd-timeline-img i {
   text-align: center;
-  display: block;
-  width: 24px;
-  height: 24px;
-  font-size: 24px;
+  font-size: 20px;
   color: white;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
 }
 
 .cd-timeline-img.cd-picture {
@@ -335,6 +331,9 @@ Modules - reusable parts of our design
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
+  }
+  .cd-timeline-img i {
+    font-size: 24px;
   }
   .cssanimations .cd-timeline-img.is-hidden {
     visibility: hidden;
@@ -420,12 +419,15 @@ Modules - reusable parts of our design
   color: #303e49;
 }
 
-.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+.cd-timeline-content p,
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
 }
 
-.cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
   display: inline-block;
 }
 
@@ -436,7 +438,7 @@ Modules - reusable parts of our design
 
 .cd-timeline-content .cd-read-more {
   float: right;
-  padding: .8em 1em;
+  padding: 0.8em 1em;
   background: #acb7c0;
   color: white;
   border-radius: 0.25em;
@@ -448,12 +450,12 @@ Modules - reusable parts of our design
 
 .cd-timeline-content .cd-date {
   float: left;
-  padding: .8em 0;
-  opacity: .7;
+  padding: 0.8em 0;
+  opacity: 0.7;
 }
 
 .cd-timeline-content::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 16px;
   right: 100%;
@@ -477,7 +479,8 @@ Modules - reusable parts of our design
     font-size: 16px;
     font-size: 1rem;
   }
-  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  .cd-timeline-content .cd-read-more,
+  .cd-timeline-content .cd-date {
     font-size: 14px;
     font-size: 0.875rem;
   }
@@ -537,7 +540,9 @@ Modules - reusable parts of our design
 
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
-  .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+  .cssanimations
+.cd-timeline-block:nth-child(even)
+.cd-timeline-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     -moz-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s;
