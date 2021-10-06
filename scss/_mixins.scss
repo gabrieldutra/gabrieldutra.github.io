@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
+
 @mixin body-font() {
-  font-family: 'Lato';
+  font-family: 'Nunito', sans-serif;
 }
 
 @mixin heading-font() {
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Nunito', sans-serif;
 }
